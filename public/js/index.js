@@ -1,8 +1,8 @@
 
 const board = document.querySelector('#board')
 
-const height = 60;
-const width = 90;
+const height = 120;
+const width = 180;
 
 function makeId(x, y) {
   return `x:${x}-y:${y}`
@@ -36,8 +36,8 @@ for (let i = 0; i < width; i++) {
   for (let j = 0; j < height; j++) {
     const div = document.createElement('div')
 
-    div.classList.add('h-5')
-    div.classList.add('w-5')
+    div.classList.add('h-2.5')
+    div.classList.add('w-2.5')
     div.classList.add('border')
     div.classList.add('border-white/5')
     div.classList.add('ease-in-out')
