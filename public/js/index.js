@@ -93,7 +93,7 @@ function verifyLifeForCoordenate({ x, y }) {
 
 
   if (div.classList.contains('dead')) {
-    if (lifes > 2) {
+    if (lifes === 3) {
       div.classList.add('life')
       div.classList.remove(['dead'])
     }
@@ -101,7 +101,7 @@ function verifyLifeForCoordenate({ x, y }) {
   }
 
   if (div.classList.contains('life')) {
-    if (lifes >= 4 || lifes === 0) {
+    if (lifes >= 4 || lifes < 2) {
       div.classList.add('dead')
       div.classList.remove(['life'])
     }
